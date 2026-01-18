@@ -1,0 +1,416 @@
+[2026-01-03T19:42:11.002Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T19:44:41.996Z] [AuthController] --- handleOAuthCallback ---
+[2026-01-03T19:44:41.997Z] [AuthController] Parameters missing in query. Serving Capture Bridge.
+[2026-01-03T19:44:54.766Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:01:42.208Z] [AuthController] syncUserWithAppwrite (POST) triggered
+[2026-01-03T20:01:42.208Z] [AuthController] Attempting to sync Appwrite user: test
+[2026-01-03T20:01:42.209Z] [AuthService] Initiating identity sync with Appwrite...
+[2026-01-03T20:01:42.422Z] [AuthController] ERROR: Sync operation failed: Sync failed: User (role: guests) missing scopes (["account"])
+[2026-01-03T20:03:09.951Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:04:16.031Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:04:24.925Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:04:41.841Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:05:41.698Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:19:07.217Z] [AuthController] POST /sync received for userId: test
+[2026-01-03T20:19:07.217Z] [AuthController] Attempting Admin-sync for Appwrite user: test
+[2026-01-03T20:19:07.217Z] [AuthService] Starting Admin-level sync for Appwrite UserID: test
+[2026-01-03T20:19:07.218Z] [AuthService] Fetching user test via Admin SDK...
+[2026-01-03T20:19:07.550Z] [AuthService] Sync ERROR: User with the requested ID could not be found.
+[2026-01-03T20:19:07.551Z] [AuthController] ERROR: Sync failed: Kullanıcı doğrulama hatası: User with the requested ID could not be found.
+[2026-01-03T20:22:35.787Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:24:38.068Z] [REQUEST] GET /health
+[2026-01-03T20:25:17.944Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:31:54.379Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:31:54.384Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:31:54.384Z] [AuthController] Redirecting to: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2Flocalhost%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:32:00.419Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:32:00.421Z] [AuthController] callback received
+[2026-01-03T20:32:00.422Z] [AuthController] Params missing in query (Fragment mode). Serving Bridge.
+[2026-01-03T20:32:24.110Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:32:24.112Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:32:24.112Z] [AuthController] Redirecting to: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2Flocalhost%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:32:34.432Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:32:34.433Z] [AuthController] callback received
+[2026-01-03T20:32:34.433Z] [AuthController] Params missing in query (Fragment mode). Serving Bridge.
+[2026-01-03T20:33:36.642Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:33:36.642Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:33:36.642Z] [AuthController] Redirecting to: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2Flocalhost%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:33:47.880Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:33:47.880Z] [AuthController] callback received
+[2026-01-03T20:33:47.880Z] [AuthController] Params missing in query (Fragment mode). Serving Bridge.
+[2026-01-03T20:35:03.311Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:35:37.376Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:35:44.737Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:38:04.951Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:38:04.954Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:38:04.954Z] [AuthController] Redirecting to: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2F127.0.0.1%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2F127.0.0.1%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:38:10.584Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:38:10.584Z] [AuthController] callback received. FULL URL: /api/auth/callback
+[2026-01-03T20:38:10.585Z] [AuthController] Referer: https://accounts.google.com/
+[2026-01-03T20:38:10.585Z] [AuthController] Params missing in query (Fragment mode). Serving Bridge.
+[2026-01-03T20:38:10.685Z] [REQUEST] GET /favicon.ico
+[2026-01-03T20:41:11.348Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:41:20.699Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:41:40.767Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:43:05.294Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:43:05.302Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:43:05.303Z] [AuthController] Redirecting to Appwrite login: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2F127.0.0.1%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2F127.0.0.1%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:43:33.339Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:43:33.339Z] [AuthController] initiateOAuth triggered
+[2026-01-03T20:43:33.340Z] [AuthController] Redirecting to Appwrite login: https://api.estatech.dev/v1/account/sessions/oauth2/google?project=6957ed5c002e38ab6228&success=http%3A%2F%2F127.0.0.1%3A3000%2Fapi%2Fauth%2Fcallback&failure=http%3A%2F%2F127.0.0.1%3A5173%2Fauth%2Ffailure
+[2026-01-03T20:43:41.876Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:43:41.877Z] [AuthController] callback received. FULL URL: /api/auth/callback
+[2026-01-03T20:43:41.877Z] [AuthController] Parameters missing in query. Serving Capture Bridge HTML.
+[2026-01-03T20:49:53.318Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:50:33.168Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:50:33.170Z] [AuthController] initiateOAuth -> Redirecting to Appwrite
+[2026-01-03T20:50:39.058Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:50:39.060Z] [AuthController] handleOAuthCallback -> Raw callback received
+[2026-01-03T20:50:39.060Z] [AuthController] ERROR: Missing userId or secret in query params
+[2026-01-03T20:50:39.174Z] [REQUEST] GET /favicon.ico
+[2026-01-03T20:53:19.339Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:54:11.643Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:54:11.646Z] [AuthController] initiateOAuth -> Redirecting to Appwrite
+[2026-01-03T20:54:47.951Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:54:47.954Z] [AuthController] handleOAuthCallback triggered
+[2026-01-03T20:54:47.955Z] [AuthController] Params missing. Injecting Frag-to-Query capture script.
+[2026-01-03T20:54:58.363Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:54:58.364Z] [AuthController] handleOAuthCallback triggered
+[2026-01-03T20:54:58.364Z] [AuthController] Params missing. Injecting Frag-to-Query capture script.
+[2026-01-03T20:56:50.901Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T20:57:24.148Z] [REQUEST] GET /api/auth/login
+[2026-01-03T20:57:24.151Z] [AuthController] initiateOAuth -> Redirecting to Appwrite
+[2026-01-03T20:57:33.625Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:57:33.628Z] [AuthController] handleOAuthCallback triggered
+[2026-01-03T20:57:33.628Z] [AuthController] Params missing. Injecting Frag-to-Query capture script.
+[2026-01-03T20:58:03.946Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T20:58:03.948Z] [AuthController] handleOAuthCallback triggered
+[2026-01-03T20:58:03.948Z] [AuthController] Params missing. Injecting Frag-to-Query capture script.
+[2026-01-03T21:07:24.500Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T21:22:39.617Z] [REQUEST] GET /api/auth/login
+[2026-01-03T21:22:39.620Z] [AuthController] initiateOAuth
+[2026-01-03T22:05:21.895Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:05:22.180Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:05:22.183Z] [AuthController] initiateOAuth
+[2026-01-03T22:05:28.922Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T22:05:49.624Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T22:05:55.532Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:05:55.532Z] [AuthController] initiateOAuth
+[2026-01-03T22:06:06.839Z] [REQUEST] GET /api/auth/callback
+[2026-01-03T22:13:06.584Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:13:25.644Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:13:25.647Z] [AuthController] initiateOAuth
+[2026-01-03T22:13:32.222Z] [REQUEST] GET /api/auth/callback?secret=5eeeb9caa83af881732f1afe1dad12545f69f20195c56d6956172e4a4dd87a25&userId=69597ce21cd4ba8ab9f8
+[2026-01-03T22:13:32.225Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:13:32.546Z] [AuthController] Error: User (role: guests) missing scopes (["account"])
+[2026-01-03T22:13:32.615Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:14:25.624Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:14:40.865Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:14:40.867Z] [AuthController] initiateOAuth
+[2026-01-03T22:14:46.339Z] [REQUEST] GET /api/auth/callback?secret=5e6ab88f42f851e8d34845abf5e3496fd68b8caa873ca4bbf5b8a51c75ccddee&userId=69597ce21cd4ba8ab9f8
+[2026-01-03T22:14:46.341Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:14:46.742Z] [AuthController] Error: User (role: guests) missing scopes (["account"])
+[2026-01-03T22:14:46.805Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:16:02.345Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:16:15.680Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:16:15.683Z] [AuthController] initiateOAuth
+[2026-01-03T22:16:40.567Z] [REQUEST] GET /api/auth/callback?secret=be98f4095211276bf0fee80229b4e41e9188204929ebe3c429fc720fe93b3538&userId=69597ce21cd4ba8ab9f8
+[2026-01-03T22:16:40.571Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:16:40.713Z] [AuthService] Syncing user: hakanozkum92@gmail.com
+[2026-01-03T22:16:40.714Z] [UserRepository] Upserting user: hakanozkum92@gmail.com
+[2026-01-03T22:16:41.236Z] [UserRepository] Upsert SUCCESS for hakanozkum92@gmail.com -> PrismaID: 21652240-47c0-4011-9366-15b7c9418b1b
+[2026-01-03T22:16:41.279Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:17:06.725Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:17:06.725Z] [AuthController] initiateOAuth
+[2026-01-03T22:17:11.610Z] [REQUEST] GET /api/auth/callback?secret=9db654458f50de8c2109352df93ee4e6393a99088c036796e0b9b8f18e2799c0&userId=69597ce21cd4ba8ab9f8
+[2026-01-03T22:17:11.612Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:17:11.757Z] [AuthService] Syncing user: hakanozkum92@gmail.com
+[2026-01-03T22:17:11.757Z] [UserRepository] Upserting user: hakanozkum92@gmail.com
+[2026-01-03T22:17:12.199Z] [UserRepository] Upsert SUCCESS for hakanozkum92@gmail.com -> PrismaID: 21652240-47c0-4011-9366-15b7c9418b1b
+[2026-01-03T22:17:12.260Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:17:35.803Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:17:35.804Z] [AuthController] initiateOAuth
+[2026-01-03T22:17:42.532Z] [REQUEST] GET /api/auth/callback?secret=938e7c5c852dd9160624df6b0d34bb965cef60d0ba09a03634ea161c291147e6&userId=6959958654075b8bced4
+[2026-01-03T22:17:42.534Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:17:42.653Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-03T22:17:42.654Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-03T22:17:43.020Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 9ef6ef3c-c221-46ff-97de-bb9dbd7fbc17
+[2026-01-03T22:17:43.078Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:27:40.225Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:28:58.228Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-03T22:33:40.833Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:33:40.838Z] [AuthController] initiateOAuth
+[2026-01-03T22:33:46.367Z] [REQUEST] GET /api/auth/callback?secret=6bc1e9c220f42db7723f1d41251acf44a7cdb96267cc57b6e046d265f2ed843d&userId=6959994a1d2cb6fb2883
+[2026-01-03T22:33:46.368Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:33:46.489Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-03T22:33:46.490Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-03T22:33:46.869Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-03T22:33:46.940Z] [REQUEST] GET /favicon.ico
+[2026-01-03T22:34:08.136Z] [REQUEST] GET /api/auth/login
+[2026-01-03T22:34:08.137Z] [AuthController] initiateOAuth
+[2026-01-03T22:34:13.644Z] [REQUEST] GET /api/auth/callback?secret=fb30b980e8297300605ab4eaa91f88c4e393a2ff4fea33bcb9a23dd2d2b11618&userId=6959996574fc14fa756e
+[2026-01-03T22:34:13.645Z] [AuthController] handleOAuthCallback
+[2026-01-03T22:34:13.753Z] [AuthService] Syncing user: hakanozkum92@gmail.com
+[2026-01-03T22:34:13.753Z] [UserRepository] Upserting user: hakanozkum92@gmail.com
+[2026-01-03T22:34:14.164Z] [UserRepository] Upsert SUCCESS for hakanozkum92@gmail.com -> PrismaID: bc7209f0-2267-42b5-8868-08a65255b184
+[2026-01-03T22:34:14.237Z] [REQUEST] GET /favicon.ico
+[2026-01-04T17:47:59.094Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-04T17:48:09.992Z] [REQUEST] GET /api/auth/login
+[2026-01-04T17:48:09.994Z] [AuthController] initiateOAuth
+[2026-01-04T17:48:17.484Z] [REQUEST] GET /api/auth/callback?secret=c6c9c39d796770d2b8a3407b57b1e2ffaa1d4c4d21eb1cceb66867152d312584&userId=6959994a1d2cb6fb2883
+[2026-01-04T17:48:17.487Z] [AuthController] handleOAuthCallback
+[2026-01-04T17:48:17.620Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T17:48:17.621Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T17:48:18.049Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T17:48:23.946Z] [REQUEST] GET /api/auth/login
+[2026-01-04T17:48:23.946Z] [AuthController] initiateOAuth
+[2026-01-04T17:48:30.956Z] [REQUEST] GET /api/auth/callback?secret=2914f92d6f0a1da54300cad7ded78b6ff002ae7841247e868f4415ebf1a88197&userId=6959994a1d2cb6fb2883
+[2026-01-04T17:48:30.957Z] [AuthController] handleOAuthCallback
+[2026-01-04T17:48:31.084Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T17:48:31.085Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T17:48:31.411Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T17:52:00.496Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-04T17:55:18.489Z] [REQUEST] GET /api/auth/login
+[2026-01-04T17:55:18.491Z] [AuthController] initiateOAuth
+[2026-01-04T17:55:23.813Z] [REQUEST] GET /api/auth/callback?secret=d9d564c65d7c5d9eb6e80df583043acb7be5ed400b46d51f3f3a79dd42051d93&userId=6959994a1d2cb6fb2883
+[2026-01-04T17:55:23.814Z] [AuthController] handleOAuthCallback
+[2026-01-04T17:55:23.952Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T17:55:23.953Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T17:55:24.520Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T18:10:03.804Z] [REQUEST] GET /api/auth/login
+[2026-01-04T18:10:03.806Z] [AuthController] initiateOAuth
+[2026-01-04T18:10:09.749Z] [REQUEST] GET /api/auth/callback?secret=424492e525b0c6f7d07fa129c199013d7e2481c718a541b33eda779a5b9e96ea&userId=6959996574fc14fa756e
+[2026-01-04T18:10:09.751Z] [AuthController] handleOAuthCallback
+[2026-01-04T18:10:09.901Z] [AuthService] Syncing user: hakanozkum92@gmail.com
+[2026-01-04T18:10:09.902Z] [UserRepository] Upserting user: hakanozkum92@gmail.com
+[2026-01-04T18:10:10.356Z] [UserRepository] Upsert SUCCESS for hakanozkum92@gmail.com -> PrismaID: bc7209f0-2267-42b5-8868-08a65255b184
+[2026-01-04T18:10:29.889Z] [REQUEST] GET /api/auth/login
+[2026-01-04T18:10:29.890Z] [AuthController] initiateOAuth
+[2026-01-04T18:10:34.928Z] [REQUEST] GET /api/auth/callback?secret=066bf186606ce535452ac09562d27f030221a50ea427c44b05a99db191e10655&userId=6959994a1d2cb6fb2883
+[2026-01-04T18:10:34.929Z] [AuthController] handleOAuthCallback
+[2026-01-04T18:10:35.056Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T18:10:35.056Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T18:10:35.493Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T18:11:10.623Z] [REQUEST] GET /api/auth/login
+[2026-01-04T18:11:10.625Z] [AuthController] initiateOAuth
+[2026-01-04T18:11:16.919Z] [REQUEST] GET /api/auth/callback?secret=3f03f23af4e83d2d25201b319f9a7a68bf980d542099f0dd821fc8ee24cf2a0d&userId=6959994a1d2cb6fb2883
+[2026-01-04T18:11:16.920Z] [AuthController] handleOAuthCallback
+[2026-01-04T18:11:17.068Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T18:11:17.069Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T18:11:17.549Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T18:56:31.150Z] [REQUEST] GET /api-docs/swagger-ui-init.js
+[2026-01-04T18:56:31.164Z] [REQUEST] GET /api-docs/swagger-ui.css
+[2026-01-04T18:56:31.173Z] [REQUEST] GET /api-docs/swagger-ui-standalone-preset.js
+[2026-01-04T18:56:31.651Z] [REQUEST] GET /api-docs/favicon-16x16.png
+[2026-01-04T19:20:02.090Z] [REQUEST] GET /api/auth/login
+[2026-01-04T19:20:02.091Z] [AuthController] initiateOAuth
+[2026-01-04T19:20:03.523Z] [REQUEST] GET /api/auth/login
+[2026-01-04T19:20:03.524Z] [AuthController] initiateOAuth
+[2026-01-04T19:20:09.155Z] [REQUEST] GET /api/auth/callback?secret=85575dc84463061ade6aea892072176b4dcde439724f2a5d8ee23f4b2ddff5a9&userId=6959994a1d2cb6fb2883
+[2026-01-04T19:20:09.156Z] [AuthController] handleOAuthCallback
+[2026-01-04T19:20:09.280Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T19:20:09.281Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T19:20:09.842Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T20:37:39.889Z] [REQUEST] GET /api/auth/login
+[2026-01-04T20:37:39.891Z] [AuthController] initiateOAuth
+[2026-01-04T20:37:50.236Z] [REQUEST] GET /api/auth/callback?secret=957b927513e04fbe823f2f4a81915d287336b36464b88707b81b40199102b77e&userId=6959996574fc14fa756e
+[2026-01-04T20:37:50.237Z] [AuthController] handleOAuthCallback
+[2026-01-04T20:37:50.376Z] [AuthService] Syncing user: hakanozkum92@gmail.com
+[2026-01-04T20:37:50.376Z] [UserRepository] Upserting user: hakanozkum92@gmail.com
+[2026-01-04T20:37:51.172Z] [UserRepository] Upsert SUCCESS for hakanozkum92@gmail.com -> PrismaID: bc7209f0-2267-42b5-8868-08a65255b184
+[2026-01-04T20:43:43.037Z] [REQUEST] GET /api/auth/login
+[2026-01-04T20:43:43.037Z] [AuthController] initiateOAuth
+[2026-01-04T20:43:49.146Z] [REQUEST] GET /api/auth/callback?secret=867d2be98c3bd63b2f32e571f1ed1ae2acbc3fe5adb37697da3f37fe09f2fd16&userId=6959994a1d2cb6fb2883
+[2026-01-04T20:43:49.147Z] [AuthController] handleOAuthCallback
+[2026-01-04T20:43:49.271Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T20:43:49.272Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T20:43:49.683Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T21:05:07.153Z] [REQUEST] GET /api/auth/login
+[2026-01-04T21:05:07.154Z] [AuthController] initiateOAuth
+[2026-01-04T21:05:14.053Z] [REQUEST] GET /api/auth/callback?secret=6edc0ee02f68d6325f7b9ddfe155f9ba77e05c254a2a476231c003d66fa6b074&userId=6959994a1d2cb6fb2883
+[2026-01-04T21:05:14.055Z] [AuthController] handleOAuthCallback
+[2026-01-04T21:05:14.188Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T21:05:14.188Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T21:05:14.662Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T21:20:14.541Z] [REQUEST] GET /api/auth/login
+[2026-01-04T21:20:14.543Z] [AuthController] initiateOAuth
+[2026-01-04T21:20:21.819Z] [REQUEST] GET /api/auth/callback?secret=d7ce46e3d280e4d806d220ac6392e67c3d3fb50f42a202e7e92901145c8585cd&userId=6959994a1d2cb6fb2883
+[2026-01-04T21:20:21.820Z] [AuthController] handleOAuthCallback
+[2026-01-04T21:20:21.937Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T21:20:21.938Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T21:20:22.480Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T21:26:07.869Z] [REQUEST] GET /api/auth/login
+[2026-01-04T21:26:07.871Z] [AuthController] initiateOAuth
+[2026-01-04T21:26:15.900Z] [REQUEST] GET /api/auth/callback?secret=5828b9633536bfd751fb3f8d5ddd821bc4b720c4033ae8f974cc7fbbafa355c8&userId=6959994a1d2cb6fb2883
+[2026-01-04T21:26:15.900Z] [AuthController] handleOAuthCallback
+[2026-01-04T21:26:16.002Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T21:26:16.002Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T21:26:16.407Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T21:36:46.681Z] [REQUEST] GET /api/auth/login
+[2026-01-04T21:36:46.681Z] [AuthController] initiateOAuth
+[2026-01-04T21:37:15.685Z] [REQUEST] GET /api/auth/callback?secret=909b54271dfcd85666ccfb4895d55b73d008c2637f4a6cfb13b4761811b44de5&userId=6959994a1d2cb6fb2883
+[2026-01-04T21:37:15.686Z] [AuthController] handleOAuthCallback
+[2026-01-04T21:37:15.799Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T21:37:15.799Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T21:37:16.261Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-04T22:28:56.643Z] [REQUEST] GET /api/auth/login
+[2026-01-04T22:28:56.645Z] [AuthController] initiateOAuth
+[2026-01-04T22:29:02.114Z] [REQUEST] GET /api/auth/callback?secret=6a2cd60b7e51d3c1792ad2c8abed59e34646d497cf47dfa55a7fd3daa4d4449f&userId=6959994a1d2cb6fb2883
+[2026-01-04T22:29:02.116Z] [AuthController] handleOAuthCallback
+[2026-01-04T22:29:02.239Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-04T22:29:02.240Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-04T22:29:02.735Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-05T21:08:21.917Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-05T21:15:30.099Z] [REQUEST] GET /api/auth/login
+[2026-01-05T21:15:30.108Z] [AuthController] initiateOAuth
+[2026-01-05T21:15:36.569Z] [REQUEST] GET /api/auth/callback?secret=69374588b4387310d6f559503c0ce591dd0b6152757a4dab0bf5e0f221401455&userId=6959994a1d2cb6fb2883
+[2026-01-05T21:15:36.571Z] [AuthController] handleOAuthCallback
+[2026-01-05T21:15:36.717Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-05T21:15:36.718Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-05T21:15:37.151Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-05T21:15:44.257Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:15:44.307Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:15:44.351Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:15:47.124Z] [REQUEST] GET /api/exams/results
+[2026-01-05T21:15:47.130Z] [REQUEST] GET /api/exams/analysis
+[2026-01-05T21:15:50.644Z] [REQUEST] GET /api/badges
+[2026-01-05T21:15:50.646Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-05T21:15:50.691Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-05T21:15:50.695Z] [REQUEST] GET /api/badges
+[2026-01-05T21:15:58.913Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-05T21:16:00.188Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-05T21:16:11.972Z] [REQUEST] GET /api/solutions/history
+[2026-01-05T21:46:58.194Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:46:58.196Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:46:58.200Z] [REQUEST] GET /api/study-plans
+[2026-01-05T21:47:03.323Z] [REQUEST] POST /api/study-plans/generate
+[2026-01-05T21:47:17.504Z] [REQUEST] GET /api/solutions/history
+[2026-01-10T14:13:28.521Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T14:13:30.576Z] [REQUEST] GET /api/auth/login
+[2026-01-10T14:13:30.580Z] [AuthController] initiateOAuth
+[2026-01-10T14:13:36.835Z] [REQUEST] GET /api/auth/callback?secret=f782a7c6fb6b0aaf66569704de4b10bc5a96bcbf29b8e46633d47d6a72a06d55&userId=6959994a1d2cb6fb2883
+[2026-01-10T14:13:36.838Z] [AuthController] handleOAuthCallback
+[2026-01-10T14:13:37.015Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-10T14:13:37.015Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-10T14:13:37.513Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-10T14:13:56.210Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T14:14:07.850Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T14:14:08.576Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T14:15:24.939Z] [REQUEST] GET /api/study-plans
+[2026-01-10T14:15:24.940Z] [REQUEST] GET /api/study-plans
+[2026-01-10T14:15:24.942Z] [REQUEST] GET /api/study-plans
+[2026-01-10T14:15:27.080Z] [REQUEST] GET /api/exams/results
+[2026-01-10T14:15:27.082Z] [REQUEST] GET /api/exams/analysis
+[2026-01-10T14:15:30.799Z] [REQUEST] GET /api/badges
+[2026-01-10T14:15:30.800Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T14:15:30.848Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T14:15:30.855Z] [REQUEST] GET /api/badges
+[2026-01-10T14:20:45.739Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T14:20:59.852Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T14:21:39.960Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T14:21:52.386Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T14:22:04.215Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:12:10.043Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:12:10.864Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:13:18.047Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:14:30.480Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:17:30.576Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:17:30.591Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:17:30.595Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:17:33.684Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T15:19:26.555Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T15:19:40.145Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T15:19:43.118Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T15:19:44.764Z] [REQUEST] GET /api/pomodoro/settings?userId=undefined
+[2026-01-10T15:23:24.633Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:23:32.568Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:23:39.876Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:23:40.829Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:24:25.270Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:24:25.992Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:24:26.481Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:24:38.410Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:24:49.975Z] [REQUEST] GET /api/auth/login
+[2026-01-10T15:24:49.977Z] [AuthController] initiateOAuth
+[2026-01-10T15:24:55.224Z] [REQUEST] GET /api/auth/callback?secret=c69cf048980ec164964b75a96642d1591384884cebbe4a219b3c5cf0e370d27a&userId=6959994a1d2cb6fb2883
+[2026-01-10T15:24:55.226Z] [AuthController] handleOAuthCallback
+[2026-01-10T15:24:55.356Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-10T15:24:55.357Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-10T15:24:55.762Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-10T15:25:02.509Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:25:11.422Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:25:14.646Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:25:27.265Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:26:47.665Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T15:26:58.376Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:26:58.379Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:26:58.383Z] [REQUEST] GET /api/study-plans
+[2026-01-10T15:27:04.910Z] [REQUEST] GET /api/badges
+[2026-01-10T15:27:04.914Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T15:27:04.971Z] [REQUEST] GET /api/badges
+[2026-01-10T15:27:04.983Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:01:53.956Z] [REQUEST] GET /api/exams/results
+[2026-01-10T16:01:53.958Z] [REQUEST] GET /api/exams/analysis
+[2026-01-10T16:01:55.207Z] [REQUEST] GET /api/badges
+[2026-01-10T16:01:55.211Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:01:55.227Z] [REQUEST] GET /api/badges
+[2026-01-10T16:01:55.230Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:01:59.885Z] [REQUEST] GET /api/badges
+[2026-01-10T16:01:59.915Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:01:59.917Z] [REQUEST] GET /api/badges
+[2026-01-10T16:01:59.924Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:02:10.849Z] [REQUEST] GET /api/auth/login
+[2026-01-10T16:02:10.849Z] [AuthController] initiateOAuth
+[2026-01-10T16:02:16.391Z] [REQUEST] GET /api/auth/callback?secret=8c0d93c76f4c094032a189671df72be9916145231bc8190a9d25582f1e62f6e2&userId=6959994a1d2cb6fb2883
+[2026-01-10T16:02:16.392Z] [AuthController] handleOAuthCallback
+[2026-01-10T16:02:16.509Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-10T16:02:16.510Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-10T16:02:16.974Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-10T16:02:25.795Z] [REQUEST] GET /api/badges
+[2026-01-10T16:02:25.799Z] [REQUEST] GET /api/badges
+[2026-01-10T16:02:25.802Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:02:25.807Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T16:02:36.518Z] [REQUEST] GET /api/study-plans
+[2026-01-10T16:02:36.813Z] [REQUEST] GET /api/study-plans
+[2026-01-10T16:02:36.880Z] [REQUEST] GET /api/study-plans
+[2026-01-10T16:02:37.683Z] [REQUEST] GET /api/exams/results
+[2026-01-10T16:02:37.687Z] [REQUEST] GET /api/exams/analysis
+[2026-01-10T16:02:59.146Z] [REQUEST] GET /api/solutions/history
+[2026-01-10T16:04:34.377Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T16:04:39.069Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-10T17:18:28.386Z] [REQUEST] GET /api/badges
+[2026-01-10T17:18:28.393Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T17:18:28.421Z] [REQUEST] GET /api/badges
+[2026-01-10T17:18:28.427Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T22:37:08.316Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-10T22:37:25.753Z] [REQUEST] GET /api/badges
+[2026-01-10T22:37:25.767Z] [REQUEST] GET /api/badges
+[2026-01-10T22:37:25.770Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T22:37:25.775Z] [REQUEST] GET /api/badges/me?userId=
+[2026-01-10T22:40:51.512Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-12T18:05:50.387Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-12T18:07:31.088Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:07:31.099Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:07:31.102Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:09:46.932Z] [REQUEST] GET /api/solutions/history
+[2026-01-12T18:09:51.714Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:09:53.613Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:09:54.768Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:09:56.384Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:10:02.022Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:23:14.436Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:24:24.740Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:24:30.949Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:24:30.952Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:24:30.955Z] [REQUEST] GET /api/study-plans
+[2026-01-12T18:24:55.409Z] [REQUEST] GET /api/auth/login
+[2026-01-12T18:24:55.409Z] [AuthController] initiateOAuth
+[2026-01-12T18:25:02.660Z] [REQUEST] GET /api/auth/callback?secret=9843c6b7432aaa9098452ec52b3d828ccb4efdfe08cf8864f60f871a2221f9c9&userId=6959994a1d2cb6fb2883
+[2026-01-12T18:25:02.662Z] [AuthController] handleOAuthCallback
+[2026-01-12T18:25:02.807Z] [AuthService] Syncing user: hakanozkum20@gmail.com
+[2026-01-12T18:25:02.807Z] [UserRepository] Upserting user: hakanozkum20@gmail.com
+[2026-01-12T18:25:03.389Z] [UserRepository] Upsert SUCCESS for hakanozkum20@gmail.com -> PrismaID: 3d62ab96-befd-426c-a26a-d21bd07313fa
+[2026-01-12T18:25:10.696Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-12T18:29:46.008Z] [REQUEST] POST /api/pomodoro/session/start
+[2026-01-17T17:18:44.502Z] >>> SERVER STARTING / RESTARTING <<<
+[2026-01-17T19:36:21.890Z] >>> SERVER STARTING / RESTARTING <<<

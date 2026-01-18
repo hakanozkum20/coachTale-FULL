@@ -1,0 +1,201 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  STUDENT
+  PARENT
+  ADMIN
+}
+
+enum PlanType {
+  FREE
+  STANDARD
+  PREMIUM
+}
+
+enum ExamType {
+  TYT
+  AYT
+  YDS
+  LGS
+  OTHER
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  avatarUrl String?
+  role      Role     @default(STUDENT)
+  plan      PlanType @default(FREE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Auth
+  googleId  String?  @unique
+  password  String?  // Google Auth ise boş olabilir
+
+  // İlişkiler
+  chatSessions     ChatSession[]
+  solutions        QuestionSolution[]
+  examResults      ExamResult[]
+  studyPlans       StudyPlan[]
+  pomodoroSessions PomodoroSession[]
+  userBadges       UserBadge[]
+  
+  // Veli Sistemi
+  parentId String?
+  parent   User?   @relation("ParentStudent", fields: [parentId], references: [id])
+  students User[]  @relation("ParentStudent")
+  
+  // Bildirimler
+  pushTokens           PushToken[]
+  notificationSettings NotificationSettings?
+  
+  // Pomodoro & Focus
+  pomodoroSettings PomodoroSettings?
+  dailyFocusStats  DailyFocusStats[]
+}
+
+model PushToken {
+  id        String   @id @default(uuid())
+  token     String
+  platform  String   // ios, android, web
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+}
+
+model ChatSession {
+  id        String        @id @default(uuid())
+  userId    String
+  user      User          @relation(fields: [userId], references: [id])
+  title     String?
+  createdAt DateTime      @default(now())
+  messages  ChatMessage[]
+}
+
+model ChatMessage {
+  id        String      @id @default(uuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id])
+  role      String      // 'user' | 'assistant'
+  content   String
+  createdAt DateTime    @default(now())
+}
+
+model QuestionSolution {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  imageUrl    String
+  ocrText     String?
+  solution    String?  // AI'ın cevabı
+  lesson      String?
+  createdAt   DateTime @default(now())
+}
+
+model ExamResult {
+  id        String     @id @default(uuid())
+  userId    String
+  user      User       @relation(fields: [userId], references: [id])
+  examType  ExamType
+  name      String?    // Örn: "3. Deneme Sınavı"
+  date      DateTime   @default(now())
+  score     Float?
+  details   ExamDetail[]
+}
+
+model ExamDetail {
+  id           String     @id @default(uuid())
+  examResultId String
+  examResult   ExamResult @relation(fields: [examResultId], references: [id])
+  lesson       String     // Matematik, Türkçe vb.
+  topic        String?    // Konu
+  correct      Int
+  incorrect    Int
+  empty        Int
+  net          Float
+}
+
+model StudyPlan {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  startDate   DateTime
+  endDate     DateTime
+  content     String   // JSON string olarak plan detayları
+  status      String   @default("ACTIVE") // ACTIVE, COMPLETED, ARCHIVED
+  createdAt   DateTime @default(now())
+}
+
+model PomodoroSession {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  duration    Int      // Dakika cinsinden
+  lesson      String?
+  topic       String?
+  startedAt   DateTime
+  endedAt     DateTime?
+  completed   Boolean  @default(false)
+}
+
+model Badge {
+  id          String      @id @default(uuid())
+  name        String      @unique
+  description String
+  imageUrl    String?
+  criteriaKey String?     @unique // e.g., 'POMODORO_10_SESSIONS'
+  userBadges  UserBadge[]
+}
+
+model UserBadge {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  badgeId   String
+  badge     Badge    @relation(fields: [badgeId], references: [id])
+  earnedAt  DateTime @default(now())
+}
+
+model NotificationSettings {
+  id                     String  @id @default(uuid())
+  userId                 String  @unique
+  user                   User    @relation(fields: [userId], references: [id])
+  pomodoroNotifications String  @default("ENABLED") // ENABLED, DISABLED
+  studyPlanReminders    Boolean @default(true)
+  examAnalysisAlerts    Boolean @default(true)
+  dailyReminders        Boolean @default(true)
+}
+
+model PomodoroSettings {
+  id                  String  @id @default(uuid())
+  userId              String  @unique
+  user                User    @relation(fields: [userId], references: [id])
+  workDuration        Int     @default(25)
+  shortBreakDuration  Int     @default(5)
+  longBreakDuration   Int     @default(15)
+  longBreakInterval   Int     @default(4)
+  dailyGoal           Int     @default(8)
+  autoStartBreaks     Boolean @default(false)
+  autoStartPomodoros  Boolean @default(false)
+}
+
+model DailyFocusStats {
+  id                String   @id @default(uuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id])
+  date              DateTime @default(now())
+  totalFocusMinutes Int      @default(0)
+  sessionsCompleted Int      @default(0)
+
+  @@unique([userId, date])
+}
